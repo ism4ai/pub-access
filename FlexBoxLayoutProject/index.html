@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox Layout</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h2> HW Tech Store</h2>
+        </div>
+
+        <div class="rightTopBar">
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+            </div>
+         
+            <a href="#" class="profileLink">
+                <div class="profile">
+                    <h2 class="profileName">Ism Smi Msi</h2>
+                    <img src="images/man.png" alt="">
+                </div>
+
+            </a>
+
+            <i class="fa fa-bars mobileMenuIcon" ></i>
+        </div>
+    </nav>
+
+    <div class="chatBar">
+        <i class="fa fa-comments" ></i>
+    </div>
+
+    <div class="mobileMenu">
+   
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Testimonies</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </div>
+    </div>
+    
+    <div class="main-wrapper">
+        <aside>
+            <div class="sideMenu">
+                <ul>
+                    <li> 
+                        <i class="fa fa-home menu-icon" ></i>
+                        <P class="menu-label">Home</P>
+                    <li>
+                        <i class="fa fa-cart-plus menu-icon" ></i>
+                        <P class="menu-label">Cart</P>
+                    </li>
+                    <li>
+                        <i class="fa fa-tag menu-icon" ></i>
+                        <P class="menu-label">Coupons</P>
+                    </li>
+                    <li>
+                        <i class="fa fa-bookmark menu-icon" ></i>
+                        <P class="menu-label">Favourite Items</P>
+                    </li>
+                    <li>
+                        <i class="fa fa-gear menu-icon" ></i>
+                        <P class="menu-label">Settings</P>
+                    </li>
+                </ul>
+
+            </div>
+            
+            <div class="sideFooter">
+                <p>HW &copy; 2024</p>
+                <p>Privacy Policy | Terms and Conditions</p>
+
+            </div>
+
+        </aside>
+
+        <main>
+            <div class="mainTop">
+                <div class="topSellers">
+                    <div class="titleBar">
+                        <div class="left">
+                            <i class="fa fa-fire menu-icon labelIcon" ></i>
+                            <h2 class="label"> Top Sellers</h2>
+                        </div>
+                       
+                        <div class="right">
+                            <h2 class="label"> Filter</h2>
+                            <i class="fa fa-filter menu-icon labelIcon" ></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="profileCard">
+                            <img src="images/man1.jpeg" alt="" profileImage>
+                            <div class="profileContent">
+                                <h2>John Smith</h2>
+                                <p>154 Orders</p>
+                            </div>
+                        </div>
+
+                        <div class="profileCard">
+                            <img src="images/man2.jpeg" alt="" profileImage>
+                            <div class="profileContent">
+                                <h2>John Smith</h2>
+                                <p>154 Orders</p>
+                            </div>
+                        </div>
+
+                        <div class="profileCard">
+                            <img src="images/man3.jpeg" alt="" profileImage>
+                            <div class="profileContent">
+                                <h2>John Smith</h2>
+                                <p>154 Orders</p>
+                            </div>
+                        </div>
+
+                        <div class="profileCard">
+                            <img src="images/man1.jpeg" alt="" profileImage>
+                            <div class="profileContent">
+                                <h2>John Smith</h2>
+                                <p>154 Orders</p>
+                            </div>
+                        </div>
+
+                        <div class="profileCard">
+                            <img src="images/man2.jpeg" alt="" profileImage>
+                            <div class="profileContent">
+                                <h2>John Smith</h2>
+                                <p>154 Orders</p>
+                            </div>
+                        </div>
+
+                        <div class="profileCard">
+                            <img src="images/man3.jpeg" alt="" profileImage>
+                            <div class="profileContent">
+                                <h2>John Smith</h2>
+                                <p>154 Orders</p>
+                            </div>
+                        </div>
+
+                        <div class="profileCard">
+                            <img src="images/man1.jpeg" alt="" profileImage>
+                            <div class="profileContent">
+                                <h2>John Smith</h2>
+                                <p>154 Orders</p>
+                            </div>
+                        </div>
+
+                        <div class="profileCard">
+                            <img src="images/man2.jpeg" alt="" profileImage>
+                            <div class="profileContent">
+                                <h2>John Smith</h2>
+                                <p>154 Orders</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="topArticles">
+                    <div class="titleBar">
+                        <div class="left">
+                            <i class="fa fa-fire menu-icon labelIcon" ></i>
+                            <h2 class="label"> Top Articles</h2>
+                        </div>
+                       
+                        <!-- <div class="right">
+                            <h2 class="label"> Filter</h2>
+                            <i class="fa fa-filter menu-icon labelIcon" ></i>
+                        </div> -->
+                    </div>
+
+                    <div class="content">
+                        <div class="articleCard">
+                            <img src="images/article1.png" alt="" > <!--articleImage -->
+                            <div class="articleContent">
+                                <h2>How to design  a logo in 5 steps</h2>
+                                <p>By Ism MsI Smi</p>
+                            </div>
+                        </div>
+
+                        <div class="articleCard">
+                            <img src="images/article1.png" alt="" > <!--articleImage -->
+                            <div class="articleContent">
+                                <h2>How to design  a logo in 5 steps</h2>
+                                <p>By Ism MsI Smi</p>
+                            </div>
+                        </div>
+
+                        <div class="articleCard">
+                            <img src="images/article1.png" alt="" > <!--articleImage -->
+                            <div class="articleContent">
+                                <h2>How to design  a logo in 5 steps</h2>
+                                <p>By Ism MsI Smi</p>
+                            </div>
+                        </div>
+
+                        <div class="articleCard">
+                            <img src="images/article1.png" alt="" > <!--articleImage -->
+                            <div class="articleContent">
+                                <h2>How to design  a logo in 5 steps</h2>
+                                <p>By Ism MsI Smi</p>
+                            </div>
+                        </div>
+    
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="mainBottom">
+                <div class="titleBar">
+                    <div class="left">
+                        <i class="fa fa-fire menu-icon labelIcon" ></i>
+                        <h2 class="label"> Latest Articles</h2>
+                    </div>
+                   
+                    <!-- <div class="right">
+                        <h2 class="label"> Filter</h2>
+                        <i class="fa fa-filter menu-icon labelIcon" ></i>
+                    </div> -->
+                </div>
+
+                <form action="" class="searchForm">
+                    <input id="textInput" type="text" placeholder="What are you looking for?">
+                    <input id="submit" type="submit" value="Submit">
+                </form>
+
+                 <div class="content">
+                        <div class="lastestPostCard">
+                            <img src="images/post1.png" alt="" > <!--articleImage -->
+                            <div class="lastestPostContent">
+                                <h2>How to design  a logo in 5 steps</h2>
+                                <p>By Ism MsI Smi</p>
+                            </div>
+                        </div>
+
+                        <div class="lastestPostCard">
+                            <img src="images/post1.png" alt="" > <!--articleImage -->
+                            <div class="lastestPostContent">
+                                <h2>How to design  a logo in 5 steps</h2>
+                                <p>By Ism MsI Smi</p>
+                            </div>
+                        </div>
+
+                        <div class="lastestPostCard">
+                            <img src="images/post1.png" alt="" > <!--articleImage -->
+                            <div class="lastestPostContent">
+                                <h2>How to design  a logo in 5 steps</h2>
+                                <p>By Ism MsI Smi</p>
+                            </div>
+                        </div>
+
+                        <div class="lastestPostCard">
+                            <img src="images/post1.png" alt="" > <!--articleImage -->
+                            <div class="lastestPostContent">
+                                <h2>How to design  a logo in 5 steps</h2>
+                                <p>By Ism MsI Smi</p>
+                            </div>
+                        </div>
+
+                        <div class="lastestPostCard">
+                            <img src="images/post1.png" alt="" > <!--articleImage -->
+                            <div class="lastestPostContent">
+                                <h2>How to design  a logo in 5 steps</h2>
+                                <p>By Ism MsI Smi</p>
+                            </div>
+                        </div>
+
+                        <div class="lastestPostCard">
+                            <img src="images/post1.png" alt="" > <!--articleImage -->
+                            <div class="lastestPostContent">
+                                <h2>How to design  a logo in 5 steps</h2>
+                                <p>By Ism MsI Smi</p>
+                            </div>
+                        </div>
+    
+                    </div>
+
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>HW &copy; 2024</p>
+    </footer>
+    
+    <script src="js/main.js"></script> 
+    <!-- This is moved down here to prevent
+    javascrip Null error when reading element of 
+    this page from the top -->
+</body>
+</html>

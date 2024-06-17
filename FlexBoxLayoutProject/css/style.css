@@ -1,0 +1,406 @@
+:root{
+    --PrmimaryBg: rgb(83, 112, 241);
+    --LightBG: rgb(247, 243, 242);
+    --grayText: rgb(210, 208, 207);
+}   
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--LightBG);
+}
+
+.main-wrapper{
+    /* background-color: #e4e8f4; */
+    max-width: 1200px;
+    margin: 0px auto; /*This is used to centralize the wrapper*/
+    margin-top: 20px;
+    display: flex;
+}
+
+nav{
+    background-color: var(--PrmimaryBg);
+    /* background-color: rgb(83, 112, 241); */
+    width: 100%;
+    height: 60px;
+    display: flex;
+    color: aliceblue;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5px;
+}
+
+nav .rightTopBar{
+    display: flex;
+    align-items: center;
+}
+
+nav .rightTopBar .menu{
+    margin-right: 20px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    margin-right: 20px;
+    list-style-type: none;
+}
+
+nav .menu a{
+    color: white;
+    text-decoration: none;
+}
+
+nav .menu a:hover{
+    color: rgb(200, 211, 244);
+}
+
+nav .profile{
+    display: flex;
+    align-items: center;
+}
+
+nav .profile h2{
+    font-size: 18px;
+}
+
+nav .profile img{
+    height: 35px;
+    border: 2px solid #f4f4f4;
+    border-radius: 100%;
+    width: 35px;
+    margin: 0px 10px;
+}
+
+nav .profileLink{
+    text-decoration: none;
+    color: white;
+}
+
+.mobileMenuIcon{
+    visibility: hidden;
+}
+
+
+.mobileMenu{
+    visibility: hidden;
+    display: none;
+}
+
+.chatBar{
+    width: 100px;
+    height: 50px;
+    font-size: 50px;
+    /* background-color: var(--PrmimaryBg); */
+    color: var(--PrmimaryBg);
+    position: fixed;
+    bottom: 20px;
+    right: -20px;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: cornflowerblue; */
+    /* border: rgb(210, 208, 207) solid; */
+    min-width: 300px;
+    max-width: 350px;
+    height: 500px;
+    color: var(--grayText);
+    margin-right: 20px;
+    background-color:white;
+    border-radius: 5px;
+}
+
+aside li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0px;
+    align-items: center;
+}
+
+aside li:hover{
+    background-color: var(--LightBG);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: var(--PrmimaryBg);
+}
+
+aside li .menu-icon{
+    font-size: 18px;
+    margin: 0px 10px
+}
+
+aside .sideFooter{
+    font-size: 10px;
+    padding: 10px;
+}
+
+aside li .menu-label{
+    font-size: 14px;
+    font-weight: 600px;
+}
+
+main{
+    width: 500px;
+    flex-grow: 1;
+    /* height: 600px; /*This is removed to allow the content to grow with the hieght*/
+    /* padding: 0px 10px; */
+    
+}
+
+.titleBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.titleBar .left{
+    display: flex;
+    align-items: center;
+
+}
+
+.titleBar .right{
+    display: flex;
+    align-items: center;
+}
+
+.titleBar .label{
+    font-size: 12px;
+}
+
+/* .titleBar .labelIcon - Based on the tag structure of the elements, using the compound class reference this way will makes the font unecessary large */
+ .labelIcon{
+    font-size: 30px;
+    margin: 0px 5px;  
+    color: orange;
+}
+
+main .mainTop{
+    background-color:white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+main .topSellers{
+    border-bottom:1px rgb(210, 208, 207) dashed;
+    margin-bottom: 15px;
+}
+
+main .topSellers .content{
+    display: flex;
+    flex-wrap:wrap;
+    padding: 10px;
+}
+
+main .topSellers .content .profileCard{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    flex-grow: 1;
+    margin: 10px 10px;
+}
+
+main .topSellers .content .profileCard img{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+main .topSellers .content .profileCard h2{
+    font-size: 14px;
+}
+
+main .topSellers .content .profileCard p{
+    font-size: 12px;
+}
+
+/* Top Articles Start */
+main .topArticles{
+    border-bottom:1px rgb(210, 208, 207) dashed;
+    margin-bottom: 15px;
+}
+
+main .topArticles .content{
+    display: flex;
+    flex-wrap:wrap;
+    padding: 10px;
+}
+
+main .topArticles .content .articleCard{
+    display: flex;
+    align-items: center;
+    width: 350px;
+    flex-grow: 1;
+    margin: 10px 10px;
+}
+
+main .topArticles .content .articleCard img{
+  width: 120px;
+  height: 100px;
+  border-radius: 5%;
+  margin-right: 10px;
+}
+
+main .topArticles .content .articleCard h2{
+    font-size: 14px;
+}
+
+main .topArticles .content .articleCard p{
+    font-size: 12px;
+}
+/* Top Articles End*/
+
+main .mainBottom{
+    background-color:white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+main .mainBottom .titleBar{
+    margin-bottom: 15px;
+}
+
+main .mainBottom .searchForm {
+    border-bottom:1px rgb(210, 208, 207) dashed;
+    padding-bottom:15px; /*Based on my experience margin-bottom could not be used due to the form tag*/
+}
+
+main .mainBottom .searchForm #textInput{
+    width: 75%;
+    height: 30px;
+    border: #e4e3e3 1px solid;
+    border-radius: 15px;
+    /* padding-left: 15px; */ /*Already implemented in the form input attribute "placeholder"*/
+}
+
+main .mainBottom .searchForm #textInput::placeholder{
+    padding-left: 15px;
+}
+
+main .mainBottom .searchForm #submit{
+    width: 90px;
+    height: 30px;
+    background-color: var(--PrmimaryBg);
+    color: white;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+main .mainBottom .content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .mainBottom .content .lastestPostCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 200px;
+    flex-grow: 1;
+    margin: 10px 10px;
+}
+
+main .mainBottom .content .lastestPostCard img{
+  width: 100%;
+  height: 130px;
+  border-radius: 5%;
+  margin-right: 10px;
+}
+
+main .mainBottom .content .lastestPostCard h2{
+    font-size: 14px;
+}
+
+main .mainBottom .content .lastestPostCard p{
+    font-size: 12px;
+}
+
+footer{
+    background-color: rgb(221, 220, 218);
+    /* background-color: rgb(83, 112, 241); */
+    width: 100%;
+    height: 60px;
+    display: flex;
+    color: rgb(125, 123, 123);
+    justify-content: center;
+    align-items: center;
+    padding: 0px 5px;
+}
+
+@media (max-width: 600px){
+    nav .menu{
+        display: none;
+    }
+
+    nav .profile{
+        display: none;
+    }
+
+
+
+    .mobileMenuIcon{
+        font-size: 40px;
+        visibility:visible;
+        margin-right: 10px;
+    }
+
+    .mobileMenu{
+        background-color: var(--PrmimaryBg);
+        visibility:visible;
+        width: 70%;
+        height: 100vh;
+        padding-top: 10px;
+        /* top, right, bottom and left are to allow object to flow
+        from the named positon while the position defines the 
+        mobility of the object*/
+        top: 0%; 
+        left: 0px;
+        position: fixed;
+        padding-left: 5px;
+    }
+
+    .mobileMenu li{
+        margin-bottom: 10px;
+        padding: 5px;
+        border-bottom: #f4f4f4 1px dashed;
+        list-style: none;
+    }
+
+    .mobileMenu a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .mobileMenu a:hover{
+        color: rgba(210, 220, 245, 0.382);
+    }
+
+    aside{
+        display: none;
+    }
+
+    main{
+        width: 100px;
+    }
+
+    .logo{
+        font-size: 9px;
+    }
+
+}
